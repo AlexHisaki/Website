@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Game Lab | インディーゲームポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo glow-text-blue">A.G.Lab</a>
+            <nav>
+                <a href="#games" class="btn">ゲームを見る</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <canvas id="particle-canvas"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glow-text-blue">Alex Game Lab</h1>
+                <p>プレイせよ。探索せよ。創造せよ。</p>
+                <a href="#featured" class="btn primary">システムへ接続</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured container">
+        <h2 class="section-title">注目プロトタイプ</h2>
+        <div class="featured-card">
+            <div class="featured-image" style="background-image: url('assets/banner_acj.png');"></div>
+            <div class="featured-content">
+                <h3 class="glow-text-purple">禁忌の言霊</h3>
+                <p>三文字から五文字の漢字の組み合わせから、魂を震わせる禁断の奥義をカードとして具現化せよ。究極奥義具現化（アルティメット・カード・ジェネレーター）システム稼働中。</p>
+                <div style="margin-top: 1rem;">
+                    <a href="game_acj.html" class="btn primary">今すぐプレイ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="games container">
+        <h2 class="section-title">ゲーム一覧</h2>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">すべて</button>
+            <button class="filter-btn" data-filter="card">カード</button>
+            <button class="filter-btn" data-filter="table">テーブル</button>
+            <button class="filter-btn" data-filter="experimental">実験的</button>
+        </div>
+
+        <div class="game-grid" id="game-grid">
+            <!-- Card -->
+            <div class="game-card" data-category="card" onclick="window.location.href='game_acj.html'">
+                <div class="card-img-wrapper">
+                    <img src="assets/banner_acj.png" alt="Game Thumbnail">
+                    <div class="card-overlay">
+                        <span>[ 詳細を見る ]</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">禁忌の言霊</h3>
+                    <span class="card-genre">カード</span>
+                </div>
+            </div>
+
+            <!-- table -->
+            <div class="game-card" data-category="table" onclick="window.location.href='game_bc3d.html'">
+                <div class="card-img-wrapper">
+                    <img src="assets/brightcafe3d.png" alt="Game Thumbnail">
+                    <div class="card-overlay">
+                        <span>[ 詳細を見る ]</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">BrightCafe3D</h3>
+                    <span class="card-genre">テーブル</span>
+                </div>
+            </div>
+
+            <!-- Experimental -->
+            <div class="game-card" data-category="experimental" onclick="window.location.href='coming_soon.html'">
+                <div class="card-img-wrapper">
+                    <img src="assets/coming_soon.png" alt="Game Thumbnail">
+                    <div class="card-overlay">
+                        <span>[ 詳細を見る ]</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Coming Soon</h3>
+                    <span class="card-genre">実験的</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+            <p class="copy">&copy; 2026 Alex Game Lab. システム稼動中。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

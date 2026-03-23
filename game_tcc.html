@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bright Cafe 3D | ゲーム詳細</title>
+    <title>The Correct Circle | ゲーム詳細</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -20,16 +20,15 @@
     </header>
 
     <section class="detail-hero">
-        <div class="detail-bg" style="background: url('assets/brightcafe3d.png') center/cover;"></div>
+        <div class="detail-bg" style="background-image: url('assets/tcc_banner.png');"></div>
         <div class="container" style="display: flex; justify-content: center;">
             <div class="detail-hero-content"
                 style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-                <h1 style="white-space: nowrap;">Bright Cafe 3D</h1>
-                <p>駒を先に３つ並べた者が勝利する３目ならべ。ただ違うのは、相手の駒をカバーできること。</p>
+                <h1>The Correct Circle</h1>
+                <p>正確に図形を書き上げろ。</p>
                 <div class="action-buttons" style="justify-content: center;">
-                    <a href="https://alexhisaki.github.io/BrightCafe3D/" class="btn primary"><i class="fas fa-play"></i>
-                        今すぐプレイ</a>
-
+                    <a href="https://alexhisaki.github.io/TheCorrectCircle/" target="_blank" rel="noopener noreferrer"
+                        class="btn primary"><i class="fas fa-play"></i> 今すぐプレイ</a>
                 </div>
             </div>
         </div>
@@ -38,17 +37,17 @@
     <section class="game-info container">
         <div class="info-content">
             <h2>ゲーム概要</h2>
-            <p>「Bright Cafe 3D」は、いわゆる３目ならべです。３×３のマスの縦、横、斜めに３つ駒を先に並べたほうの勝利です。</p>
-            <p>普通の３目ならべと異なる点は、相手の駒に被せる（カバーする）ことができ、一度置いた駒を取り除いて再使用できることです。</p>
+            <p>「The Correct Circle」は、与えられた図形を正確に書き上げるパズルゲームです。</p>
+            <p>正確な円、正三角形、45度を書いてみよう。</p>
         </div>
         <div class="info-meta">
             <div class="meta-item">
                 <h4>ジャンル</h4>
-                <p>テーブルゲーム</p>
+                <p>パズル</p>
             </div>
             <div class="meta-item">
                 <h4>プレイスタイル</h4>
-                <p>一人用 / 二人用</p>
+                <p>一人用</p>
             </div>
             <div class="meta-item">
                 <h4>ステータス</h4>
@@ -62,19 +61,19 @@
             <h2 class="section-title">コア機能</h2>
             <div class="features-grid">
                 <div class="feature-item">
-                    <i class="fas fa-angle-double-up feature-icon"></i>
-                    <h3>カバー</h3>
-                    <p>相手の駒より大きい駒は、かぶせて配置可能。</p>
+                    <i class="far fa-circle feature-icon"></i>
+                    <h3>描写</h3>
+                    <p>正しい図形を描写。</p>
                 </div>
                 <div class="feature-item">
-                    <i class="fas fa-retweet feature-icon"></i>
-                    <h3>ピックアップ</h3>
-                    <p>配置済みの駒を取り除いて、再使用が可能。（ただし、取り除いたターンでは使用不可）</p>
+                    <i class="fas fa-check feature-icon"></i>
+                    <h3>採点</h3>
+                    <p>どれくらい正しく描写できたか採点。</p>
                 </div>
                 <div class="feature-item">
-                    <i class="fas fa-coffee feature-icon"></i>
-                    <h3>カフェの世界</h3>
-                    <p>落ち着いたカフェで優雅にゲーム興じる雰囲気を楽しもう。</p>
+                    <i class="fas far fa-comments feature-icon"></i>
+                    <h3>共有</h3>
+                    <p>採点結果をコピーして共有可能。</p>
                 </div>
             </div>
         </div>
@@ -85,16 +84,16 @@
             <h2 class="section-title">スクリーンショット</h2>
             <div class="gallery-scroll" id="gallery-container">
                 <div class="gallery-item">
-                    <img src="assets/bc3d-1.png" alt="Screenshot 1">
+                    <img src="assets/tcc1.png" alt="Screenshot 1">
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/bc3d-2.png" alt="Screenshot 2">
+                    <img src="assets/tcc2.png" alt="Screenshot 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/bc3d-3.png" alt="Screenshot 3">
+                    <img src="assets/tcc3.png" alt="Screenshot 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/bc3d-4.png" alt="Screenshot 4">
+                    <img src="assets/tcc4.png" alt="Screenshot 4">
                 </div>
             </div>
         </div>
@@ -104,22 +103,17 @@
         <h2 class="section-title">操作マニュアル</h2>
         <div class="controls-wrapper">
             <div class="control-item">
-                <span>配置</span>
-                <span class="key">自陣の駒をクリック</span>
+                <span>描写</span>
+                <span class="key">左ドラッグ</span>
             </div>
-            <div class="control-item">
-                <span>回収</span>
-                <span class="key">盤上の駒をクリック</span>
-            </div>
-
         </div>
     </section>
 
     <section class="final-cta">
         <div class="container">
             <h2 style="margin-bottom: 2rem;">接続する準備はできているか？</h2>
-            <a href="https://alexhisaki.github.io/BrightCafe3D/" class="btn primary"
-                style="font-size: 1.5rem; padding: 15px 40px;">シーケンスを起動</a>
+            <a href="https://alexhisaki.github.io/TheCorrectCircle/" target="_blank" rel="noopener noreferrer"
+                class="btn primary" style="font-size: 1.5rem; padding: 15px 40px;">シーケンスを起動</a>
         </div>
     </section>
 
